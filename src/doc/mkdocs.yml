@@ -1,7 +1,7 @@
 site_name: AcronisFSS
 site_description: Documentation for AcronisFSS
 site_author: Strasser, Joel;
-site_url: https://acronisfss.joestr.or.at/unspecified
+site_url: https://acronisfss.joestr.or.at/0.1.0-SNAPSHOT+0/0.2.0-SNAPSHOT+0
 
 repo_name: AcronisFSS-website
 repo_url: https://github.com/joestrhq/AcronisFSS-website
@@ -16,3 +16,25 @@ nav:
   - About: about.md
 theme:
   name: material
+  palette:
+    primary: 'blue'
+    accent: 'blue'
+
+plugins:
+  - markdownextradata
+  - search:
+      lang: en
+      prebuild_index: true
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/joestrhq
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/joestrhq
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/joestrhq
+    - icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/joestrhq
+    - icon: fontawesome/brands/keybase
+      link: https://keybase.io/team/joestrhq.acronisfss

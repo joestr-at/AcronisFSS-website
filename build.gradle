@@ -6,7 +6,15 @@
  */
 
 plugins {
-    id("ru.vyarus.mkdocs") version "2.1.1" apply true
+    id 'ru.vyarus.mkdocs' version '2.1.1' apply true
 }
 
-mkdocs.publish.docPath = null
+mkdocs {
+    publish {
+        docPath = null
+        rootRedirect = true
+    }
+    extras = [
+        'dependencyVersion': '0.1.0-SNAPSHOT'
+    ]
+}
